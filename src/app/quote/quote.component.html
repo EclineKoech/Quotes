@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>Quotes</h1>
+  <hr>
+  <div class="row gx-5">
+    <div class="col-md-6 border-hidden">
+      <hr>
+      <div *ngFor='let quote of quotes;let i = index'>
+         <div class="card mb-2">
+           <div class="card-header mb-0">
+             <p>{{quote.title}}</p>
+             <button (click)='toggleDetails(i)'>See More</button>
+           </div>
+           <div class="card-body">
+             <blockquote class="blockquote">
+               <p>{{quote.description}}</p>
+               <footer class="blockquote-footer">{{quote.author}} <cite title="Source Title"></cite>on {{quote.postDate|date}}
+               </footer>
+               <p class="post">Posted by {{quote.name}}, {{quote.postDate|dateCount}}days ago</p>
+             </blockquote>
+           </div>
+           <div *ngIf='quote.showDescription'>
+             <app-quote-detail [quote]='quote'(isComplete)='deleteQuote($event,i)'></app-quote-detail>
+           </div>
+         </div>
+      </div>
+    </div>
+    <div class="col-md-6 border-hidden">
+      <app-quote-form (addQuote)= "addNewQuote($event)"></app-quote-form>
+    </div>
+  </div>
+</div>
+
