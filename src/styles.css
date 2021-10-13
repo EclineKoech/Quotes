@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+   background-image: url(assets/redclouds.gif);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: rgb(49,47,29);
+ }
+
+p{
+    line-height: 2;
+}
+h1{
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    box-shadow: 2px 2px 4px rgb(149,69,65);
+    font-weight: bolder ;
+}
+h2{
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    box-shadow: 2px 2px 2px rgb(149,69,65); 
+}
+hr{
+    width: fit-content;
+   
+}
