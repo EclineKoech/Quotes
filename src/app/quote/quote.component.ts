@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Quotes } from '../quotes';
+import { Quote } from '../quote';
 
 @Component({
   selector: 'app-quote',
@@ -8,19 +8,19 @@ import { Quotes } from '../quotes';
 })
 export class QuoteComponent implements OnInit {
   title = 'Quotes';
-  quotes: Quotes[] = [
-    new Quotes(
+  quotes: Quote[] = [
+    new Quote(
       'Tech Quote',
-      'Esme',
+      'Cecile',
       'Matt Mullenweg',
       'Technology is best when it brings people together',
       0,
       0,
       new Date(2020, 6, 18)
     ),
-    new Quotes(
+    new Quote(
       'Tech Quote',
-      'ecline',
+      'Voila',
       'Steve Jobs',
       'It is not by faith in technology but in people',
       0,
