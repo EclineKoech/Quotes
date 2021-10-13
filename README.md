@@ -1,6 +1,30 @@
 # Quotes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.
+1.1.
+
+
+# Description
+
+This is an angular cli app that allows users to generate as many quotes as you can and delete them,also vote for most liked votes.
+
+## Installation/Setup
+
+* Install visual studio code
+* Git clone this repository
+* Ensure to have live server extension installed
+* Click on Go Live
+
+## Technologies Used
+
+* Html
+* Css
+* Angular
+* Bootstrap
+
+
+# Known Bugs
+No bugs.
 
 ## Development server
 
@@ -25,6 +49,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# Contact Information
+
+Email at: eclinejerutokoech@gmail.com
 
 ### License
 
